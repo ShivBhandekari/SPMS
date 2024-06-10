@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">     <!--  doctype html public is part of format which is used to define DTD (Document type defination) -->    
+<html xmlns="http://www.w3.org/1999/xhtml">                              <!--  specifies the xml namespace for a document --> 
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">               <!--  Addressing the style sheet of CSS -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">         <!--this link in your head of the html file, and use a font awesome link for an icon.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> 
+    <link rel="Website Icon" type="png" href="logo1.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />             <!--  Meta data about HTML document -->    
+  <style>
+
+	body
+	{
+		background-image:url(bg1.png);
+		background-repeat: no-repeat; 
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	} 
+  marquee{
+      font-size: 20px;
+      font-weight: 40;
+      color: black;
+      font-family: 'Times new Roman';
+      /* margin: 68px 0; */
+      }        
+  .tab {
+            display: inline-block;
+            margin-left: 310px;
+        }
+     
+</style>
+<title>Students Project Management System</title>
+</head>
+<body>
+    <body>
+        <table width="100%"  cellspacing="00" cellpadding="00">
+          <tr bgcolor="blue" height="150">
+            <th width="3%" scope="col">&nbsp;</th>
+            <th width="20%"  scope="col"><img src="logo1.png" alt="LOGO" height="130" /></th>
+            <th width="66%" scope="col"><font size="8" color="White">Students Project Management System</font></th>
+        
+            <th width="20%" scope="col">&nbsp;</th>
+          <tr>
+            </tr></tr></table>
+            <table width="100%" border="0" cellspacing="00" align="center" cellpadding="00">
+              <tr bgcolor="skyblue">            
+              <th width="12%" scope="col"><h4>&nbsp;</h4></th>
+                  <th width="5%" scope="col"><a class="button-18" href="/student/project_detail.html">Home</a></th>
+                  <th width="5%" scope="col"><a class="button-18" href="/student/faculty_detail.html">About Us</a></th>
+                  <th width="5%" scope="col"><a class="button-18" href="/student/mail.html">Features</a></th>
+                  <th width="5%" scope="col"><a class="button-18" href="/student/mail.html">Contact Us</a></th>
+               
+                  <th width="12%" scope="col">&nbsp;</th>
+              </tr>
+                   <tr>
+                    
+                </tr>
+              </table>
+            <td>&nbsp;</td>         <!-- Non-Breaking space -->  
+            <td>&nbsp;</td>
+            <td><div style="width:50%;background-color:aqua;margin-left:20%;margin-top:12%;border: 3px solid black; border-radius:3%; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+                <br><br>
+                <form name="login"  onsubmit="return false;">          <!--  post - sends data to a server to create or update the resource -->    
+                    
+                    <table width="100%"  cellspacing="02" cellpadding="05">
+              <tr>
+                  <th colspan="2" scope="col"><font size="5">LOGIN</font></th>
+                </tr>
+              <tr>
+                  <td align="right"><font size="4">Login ID&nbsp;:&nbsp;</font></td>
+                <td><input style="height: 18px; font-size: 15px;" type="text" name="id" required/><br/>
+                </td>
+              </tr>
+              <tr>
+                  <td align="right"><font size="4">Password&nbsp;:&nbsp;</font></td>
+                <td><input style="height: 18px; font-size: 15px;" type="password" name="pass" required/></td>
+              </tr>
+              <tr>
+                  <td align="right"><font size="4">Login As&nbsp;:&nbsp;</font></td>
+                <td>
+                  
+                   <select id="pageSelect">
+                      <option value="">--Select an option--</option>
+                      <option value="student.html">Student</option>
+                      <option value="faculty.html">Faculty</option>
+                      <option value="admin.html">Admin</option>
+                  </select>
+                  </td>
+              </tr>
+                        <tr>
+                            <td colspan="2" align="center"><br/>
+                            <input class="button-61" onclick="openPage()" type="submit" role="button" name="register" value="Submit"/></td>
+                        </tr>
+                        <td>
+                          <a href="forgetpassword.html">forget password</a>
+                        </td>
+                        
+            
+            </table> 
+            
+                    <br/>
+                    &nbsp;
+                    </form>
+                    </div>
+                 </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            
+
+            <script>
+              function openPage() {
+                  const select = document.getElementById('pageSelect');
+                  const selectedValue = select.options[select.selectedIndex].value;
+                  if (selectedValue) {
+                      window.location.href = selectedValue;
+                  } 
+              }
+          </script>
+</body>
+</html>

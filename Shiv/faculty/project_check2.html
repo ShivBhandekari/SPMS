@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/index.css">
+<link rel="Website Icon" type="png" href="/logo1.png">
+<style>
+    body {
+        background-image:url(/bg1.png);
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
+<title>Students Project Management System</title>
+</head>
+<body>
+<table width="100%"  border="0"cellspacing="00" cellpadding="00">
+  <tr bgcolor="blue">
+    <th width="7%" scope="col">&nbsp;</th>
+    <th width="10%" scope="col"><img src="/logo1.png" alt="LOGO"  height="130"/></a></th>
+    <th width="66%" scope="col"><font size="8" color="White">Students Project Management System</font></th>
+    <th width="7%" scope="col"><font color="White" size="5">Faculty</font></th>
+    <th width="10%" scope="col">&nbsp;</th>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="00" cellpadding="00">
+    <tr bgcolor="skyblue">
+        <th width="12%" scope="col"><h4>&nbsp;</h4></th>
+        <th width="9%" scope="col"><a class="button-18" href="/faculty/project_check.html">Project Details</a></th>
+        <th width="9%" scope="col"><a class="button-18" href="/faculty/student_detail.html">Student Detail</a></th>
+        <th width="9%" scope="col"><a class="button-18" href="/faculty/mail.html">Mail System</a></th>
+        <th width="9%" scope="col"><a class="button-18" href="/faculty/meeting.html">Meeting Details</a></th>
+        <th width="9%" scope="col"><a class="button-18" href="/index.html">Logout</a></th>
+        <th width="12%" scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+    </tr>
+</table> 
+  
+<form id="myForm" action="">
+    <br/><br/>
+    <div class="box" style="background-color: cyan; margin-left: 33%; alignment-adjust: central; border-radius:25px; width: 35%">
+        <table align="center">
+            <tr>
+                <td><h4>&nbsp;</h4></td>
+                <td align="center">
+                    <select id="studentSelect" name="student" style="width: 10em; height: 2em; font-size: 15px; text-align:center;">
+                        <option value="project_check1.html">5501</option>
+                        <option value="project_check2.html">5502</option>
+                        <option value="project_check3.html">5503</option>
+                        <option value="#">5504</option>
+                        <option value="#">5505</option>
+                        <option value="#">5506</option>
+                    </select>   &nbsp;&nbsp;&nbsp;
+                    <input class="button-17" type="submit" name="asses" value="Check" onclick="openPage()">
+                </td>
+            </tr>
+        </table>  
+    </div>
+</form>
+
+<form >
+    <div style="background-color:cyan;  alignment-adjust: central; width:90%; margin-left:5%; margin-top:75px;">
+        <table width="100%" cellpadding="5" cellspacing="5" border="1" align="center">
+            <tr>
+                <th>Student ID</th>
+                <th>Project Proposal</th>
+                <th>Project Specification</th>
+                <th>Project Marks</th>   <!--Assessment-->
+            </tr>
+            <tr>
+                <td align="center">23030331245502<br><br></td>
+                <td align="center"><button class="button-17" type="button"  name="bppf" value="upload"><a href="https://drive.google.com/drive/folders/1GpBQ0RBlIXeZpH5gVCn7Fpk6SIVHsjP2?usp=sharing" style="text-align:center">View</a></button><br/><br/></td>
+                <td align="center"><button class="button-17" type="button"  name="bpsf" value="upload"><a href="https://drive.google.com/drive/folders/1FbvkK3VuUom5Ou6ExiGymJgkYg1toq8m?usp=sharing" style="text-align:center">View</a></button><br/><br/></td>
+                <td align='center'><br><input  id="in" value="85" name="assessmen" style="width:25px; text-align: center;"/><br/><br/><input class="button-17" type="submit" value="Submit" name="assess"/> </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<script>
+    function openPage() {
+        var selectedOption = document.getElementById("studentSelect").value;
+        // You can replace '#' with the actual URL of the page you want to open based on the selected option
+        window.open("page_to_open.html?id=" + selectedOption, "_blank"); // Opens in a new tab
+    }
+</script>
+</body>
+</html>
